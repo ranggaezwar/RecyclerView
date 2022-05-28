@@ -30,29 +30,21 @@ public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaViewHolder>
     public void onBindViewHolder(@NonNull MahasiswaViewHolder holder, int position) {
         MahasiswaModel mm = _mahasiswaModelList.get(position);
         holder._jkImageView.setImageResource(R.drawable.boy);
-<<<<<<< HEAD
         if (mm.getJenisKelamin().toLowerCase().equals("perempuan"))
         {
             holder._jkImageView.setImageResource(R.drawable.girl);
         }
 
-=======
         if (mm.getJenisKelamin().toLowerCase().equals("perempuan")) {
             holder._jkImageView.setImageResource(R.drawable.girl);
         }
->>>>>>> 857314f9d086450393f9330bf21042d6db4f6d73
         holder._nimTextView.setText(mm.getNIM());
         holder._namaTextView.setText(mm.getNama());
         holder._jkTextView.setText(mm.getJenisKelamin());
 
         String jp = mm.getJP();
-<<<<<<< HEAD
         jp = jp.substring(0,2);
         holder._jkTextView.setText(jp);
-=======
-        jp = jp.substring(0, 2);
-        holder._jpTextView.setText(jp);
->>>>>>> 857314f9d086450393f9330bf21042d6db4f6d73
     }
 
     @Override
@@ -63,11 +55,6 @@ public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaViewHolder>
         {
             count = _mahasiswaModelList.size();
         }
-<<<<<<< HEAD
-        return count;
-=======
         return  count;
-
->>>>>>> 857314f9d086450393f9330bf21042d6db4f6d73
     }
 }

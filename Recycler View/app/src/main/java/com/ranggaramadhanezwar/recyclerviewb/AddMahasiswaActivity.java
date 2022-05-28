@@ -59,10 +59,10 @@ public class AddMahasiswaActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                String url = "https://stmikpontianak.net/01100862/tambahMahasiswa.php" +
+                String url = "https://stmikpontianak.net/011100862/tambahMahasiswa.php" +
                         "?nim=" + nim +
                         "&nama=" + nama +
-                        "jenisKelamin=" + jenisKelamin +
+                        "&jenisKelamin=" + jenisKelamin +
                         "&tempatLahir=" + tempatLahir +
                         "&tanggalLahir=" + tanggalLahir +
                         "&alamat=" + alamat +
