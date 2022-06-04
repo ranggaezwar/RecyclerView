@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">RecyclerView B</string>
     <string-array name="JenisKelaminArray">
-        <item>Laki Lai</item>
+        <item>Laki Laki</item>
         <item>Perempuan</item>
     </string-array>
     <string-array name="jpArray">

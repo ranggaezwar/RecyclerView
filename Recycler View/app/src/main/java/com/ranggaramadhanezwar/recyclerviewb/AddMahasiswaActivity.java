@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -51,8 +52,10 @@ public class AddMahasiswaActivity extends AppCompatActivity {
 
                 try {
                     alamat = URLEncoder.encode(alamat, "utf-8");
+                    jenisKelamin = URLEncoder.encode(jenisKelamin, "utf-8");
                     nama = URLEncoder.encode(nama, "utf-8");
                     nim = URLEncoder.encode(nim, "utf-8");
+                    statusNikah = URLEncoder.encode(statusNikah, "utf-8");
                     tanggalLahir = URLEncoder.encode(tanggalLahir, "utf-8");
                     tempatLahir = URLEncoder.encode(tempatLahir, "utf-8");
                 } catch (UnsupportedEncodingException e) {
@@ -69,6 +72,8 @@ public class AddMahasiswaActivity extends AppCompatActivity {
                         "&jp=" + jp +
                         "&statusNikah=" + statusNikah +
                         "&tahunMasuk=" + tahunMasuk;
+
+                Log.d("*tw*", url);
 
                 AsyncHttpClient ahc = new AsyncHttpClient();
 
@@ -98,7 +103,7 @@ public class AddMahasiswaActivity extends AppCompatActivity {
         _namaEditText = findViewById(R.id.namaEditText);
         _nimEditText = findViewById(R.id.nimEditText);
         _statusNikahSpinner = findViewById(R.id.statusNikahSpinner);
-        _tahunMasukEditText = findViewById(R.id.alamatEditText);
+        _tahunMasukEditText = findViewById(R.id.tahunMasukEditText);
         _tanggalLahirEditText = findViewById(R.id.tanggalLahirEditText);
         _tempatLahirEditText = findViewById(R.id.tempatLahirEditText);
 
